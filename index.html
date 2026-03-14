@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Explore Singapore Adventures</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f4f6fb;
+color:#333;
+}
+
+/* HERO */
+
+.hero{
+height:80vh;
+background:url("https://images.unsplash.com/photo-1525625293386-3f8f99389edd");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero-box{
+background:rgba(0,0,0,0.5);
+padding:50px;
+border-radius:20px;
+max-width:600px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.hero button{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#2ecc71;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+/* SECTION */
+
+.section{
+padding:60px 10%;
+text-align:center;
+}
+
+.section h2{
+font-size:32px;
+margin-bottom:20px;
+}
+
+/* ABOUT */
+
+.about{
+max-width:700px;
+margin:auto;
+line-height:1.6;
+font-size:18px;
+}
+
+/* EVENTS GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+padding:20px;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card button{
+margin-top:10px;
+background:#2ecc71;
+border:none;
+padding:8px 18px;
+color:white;
+border-radius:20px;
+cursor:pointer;
+}
+
+/* STEPS */
+
+.steps{
+max-width:600px;
+margin:auto;
+text-align:left;
+font-size:18px;
+line-height:1.7;
+}
+
+/* CONTACT */
+
+.contact{
+background:#2ecc71;
+color:white;
+padding:50px;
+margin-top:40px;
+}
+
+</style>
+
+<script>
+
+function registerEvent(name){
+
+alert(
+"You selected: "+name+
+"\n\nSteps to join:"+
+"\n1. Click Register"+
+"\n2. Send confirmation email"+
+"\n3. Wait for event confirmation"
+)
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-box">
+
+<h1>Explore Singapore Adventures</h1>
+
+<p>If you want to visit Singapore, please check out my website.</p>
+
+<button>Explore Events</button>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section">
+
+<h2>About This Website</h2>
+
+<p class="about">
+
+This website introduces exciting travel activities around Singapore.
+Visitors can explore events, meet new friends, and experience
+different adventures such as hiking, photography, and food tours.
+
+</p>
+
+</section>
+
+
+<!-- EVENTS -->
+
+<section class="section">
+
+<h2>Upcoming Events</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Nature Walk</h3>
+<p>📅 March 15</p>
+<p>📍 MacRitchie Reservoir</p>
+<p>👥 8 spots left</p>
+<button onclick="registerEvent('Nature Walk')">Register</button>
+</div>
+
+<div class="card">
+<h3>Beach Sunset Walk</h3>
+<p>📅 March 22</p>
+<p>📍 East Coast Park</p>
+<p>👥 12 spots left</p>
+<button onclick="registerEvent('Beach Walk')">Register</button>
+</div>
+
+<div class="card">
+<h3>City Photo Walk</h3>
+<p>📅 March 29</p>
+<p>📍 Marina Bay</p>
+<button onclick="registerEvent('Photo Walk')">Register</button>
+</div>
+
+<div class="card">
+<h3>Night City Tour</h3>
+<p>📅 April 5</p>
+<p>📍 Clarke Quay</p>
+<button onclick="registerEvent('Night Tour')">Register</button>
+</div>
+
+<div class="card">
+<h3>Garden Exploration</h3>
+<p>📅 April 12</p>
+<p>📍 Botanic Gardens</p>
+<button onclick="registerEvent('Garden Walk')">Register</button>
+</div>
+
+<div class="card">
+<h3>Island Cycling</h3>
+<p>📅 April 19</p>
+<p>📍 Pulau Ubin</p>
+<button onclick="registerEvent('Cycling')">Register</button>
+</div>
+
+<div class="card">
+<h3>Food Adventure</h3>
+<p>📅 May 3</p>
+<p>📍 Chinatown</p>
+<button onclick="registerEvent('Food Tour')">Register</button>
+</div>
+
+<div class="card">
+<h3>Sunrise Hiking</h3>
+<p>📅 May 10</p>
+<p>📍 Bukit Timah</p>
+<button onclick="registerEvent('Hiking')">Register</button>
+</div>
+
+<div class="card">
+<h3>Outdoor Games</h3>
+<p>📅 May 17</p>
+<p>📍 Gardens by the Bay</p>
+<button onclick="registerEvent('Outdoor Games')">Register</button>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- HOW TO JOIN -->
+
+<section class="section">
+
+<h2>How to Join an Event</h2>
+
+<div class="steps">
+
+1️⃣ Browse the event grid above and choose an activity you like.  
+<br><br>
+
+2️⃣ Click the **Register** button on the event card.  
+<br><br>
+
+3️⃣ Send a confirmation email to the organizer.  
+<br><br>
+
+4️⃣ Receive the event confirmation and enjoy the adventure!
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+<h2>Contact</h2>
+
+<p>Email: 2369782617@qq.com</p>
+
+<p>Follow the website to explore more adventures in Singapore.</p>
+
+</section>
+
+
+</body>
+</html>
